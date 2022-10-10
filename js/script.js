@@ -14,6 +14,8 @@ function calculate() {
   document.getElementById("resultado").value = q;
 }
 
+// This funcion erase the last digit
+
 backspace.onclick = function(e){
   erase();
 }
@@ -23,6 +25,8 @@ function erase (){
   var newValue = value.substring(0,value.length - 1);
   resultado.value = newValue;
 }
+
+//Disabled decimal dot 
 
 var dot = document.getElementById("dot");
 dot.addEventListener("clearScreen", function(event) {
