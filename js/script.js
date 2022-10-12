@@ -7,6 +7,11 @@ function display(value) {
   document.getElementById("resultado").value += value;
 }
 
+function operator(value){
+  document.getElementById("resultado").value += value;
+}
+
+
 // This function evaluates the expression and returns result
 function calculate() {
   var p = document.getElementById("resultado").value;
@@ -28,8 +33,7 @@ function erase (){
 
 //Disabled decimal dot 
 
-var dot = document.getElementById("dot");
-dot.addEventListener("clearScreen", function(event) {
+var dot = document.getElementById('dot');
+dot.addEventListener('click', function(event) {
   event.target.disabled = true;
 });
-
